@@ -1,5 +1,6 @@
-from app import app, members
 import pytest
+from app import app, members
+
 
 
 

@@ -3,8 +3,6 @@ import pytest
 from app import app, members
 
 
-
-
 @pytest.fixture()
 def client():
     app.config["TESTING"] = True

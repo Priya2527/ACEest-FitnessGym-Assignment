@@ -69,23 +69,26 @@ The `Jenkinsfile` checks out the repository, installs dependencies, validates sy
 
 This Jenkinsfile uses Unix shell steps (`sh`) and is intended for a Linux Jenkins agent with Python 3, Git, and Docker available. Adapt it if your instructor provides a different environment.
 
-## Suggested Git workflow
+## Git workflow
 
-```powershell
-git init
+The project is maintained in a public GitHub repository.
+
+Repository: https://github.com/Priya2527/ACEest-FitnessGym-Assignment
+
+To download the project:
+
+```bash
+git clone https://github.com/Priya2527/ACEest-FitnessGym-Assignment.git
+cd ACEest-FitnessGym-Assignment
+```
+
+To submit future changes:
+
+```bash
 git add .
-git commit -m "Add ACEest Fitness application and DevOps pipeline"
-git branch -M main
+git commit -m "Describe the changes"
+git push origin main
 ```
-
-Create an empty public GitHub repository, copy its HTTPS URL, and run:
-
-```powershell
-git remote add origin YOUR_GITHUB_REPOSITORY_URL
-git push -u origin main
-```
-
-Replace the placeholder with your actual repository URL.
 
 ## Screenshots to collect
 
@@ -99,3 +102,4 @@ Replace the placeholder with your actual repository URL.
 ## Limitations
 
 This is a learning starter project, not a production membership system. It has no database, authentication, or persistent storage.
+
